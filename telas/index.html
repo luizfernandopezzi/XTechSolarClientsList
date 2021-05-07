@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Tech Solar | Clientes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/lista_cliente.css">
+    <link rel="stylesheet" href="../assets/css/componentes/tabela.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+    <link rel="stylesheet" href="../assets/css/componentes/modal.css">
+</head>
+
+<body>
+    <header>        
+        <nav class="navbar navbar-expand-lg cabecalho container">
+            <div class="navbar-brand">
+                <img  src="../assets/img/xtechsolar.svg" alt="Logotipo X Tech Solar" width="30" height="30" class="d-inline-block align-text-middle">
+                <span class="m-3 cabecalho-titulo fw-bold">X Tech Solar</span>
+            </div>
+
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link" nav-link>
+                    <a href="index.html">Clientes </a>
+                </li>
+            </ul>              
+        </nav>
+    </header>
+
+    <main class="container flex flex--centro flex--coluna">
+        
+        <div class="mb-4">
+            <label class="text-center" for="filtrar-tabela">Procurar Cliente: </label>
+            <input class="text-center" type="text" name="filtro" id="filtrar-tabela" placeholder="Nome">
+        </div>
+
+        <table class="tabela" data-tabela>
+            <thead>
+                <tr>
+                    <th class="col text-center">Nome</th>
+                    <th class="col text-center">Email</th>
+                    <th class="col text-center">Telefone</th>
+                    <th class="col text-center">Informações Pessoais</th>
+                    <th class="col text-center">Endereço</th>
+                    <th class="col text-center"><a href="./cadastro_luiz.html" class="botao-simples botao-simples--adicionar">Novo Cliente</a></th>
+                </tr>
+            </thead>
+            <tbody data-tabela></tbody> 
+        </table>       
+    </main>
+
+    <script type="module"src="../controller/listaClientes-controller.js"></script>
+    <script type="module" src="../js/filtra.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    
+</body> 
+</html>
+

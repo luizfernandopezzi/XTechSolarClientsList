@@ -1,0 +1,25 @@
+.clientes-container {
+  padding: 3rem;
+}
+
+#filtrar-tabela {
+  width: 200px;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+#filtrar-tabela:focus {
+  background-color: lightgoldenrodyellow;
+}
+
+.invisivel {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .clientes-container {
+    padding-left: calc((100vw - 900px) / 2);
+    padding-right: calc((100vw - 900px) / 2);
+  }
+}
